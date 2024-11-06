@@ -7,7 +7,7 @@ public class Bill3 {
 		String n3 = args[2];
 		double bill = Double.parseDouble(args[3]);
 		int formated = (int)Math.ceil(bill/3);
-		System.out.println("Dear "+ n1+ ", "+ n2+ ", "+ "and " + n3 + ": "+ "pay "+ formated + "Shekels each ");
+		System.out.println("Dear "+ n1+ ", "+ n2+ ", "+ "and " + n3 + ": "+ "pay "+ formated + " Shekels each ");
 
 	       
 	}
