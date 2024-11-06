@@ -4,9 +4,8 @@ public class FVCalc {
 		// Replace this comment with your code
 		int currentValue = Integer.parseInt(args[0]);
 		double rate = Double.parseDouble(args[1]);
-		rate = rate/100; 
 		int n =  Integer.parseInt(args[2]);
-		double futureValue = currentValue * Math.pow(1+rate , n);
-		System.out.println( "After " + n + " years, %" + currentValue + " saved at " + rate + "%" + " will yield %" + (int)futureValue);
+		double futureValue = currentValue * Math.pow(1+(rate/100) , n);
+		System.out.println( "After " + n + " years, $" + currentValue + " saved at " + rate + "%" + " will yield $" + (int)futureValue);
 	}
 }
