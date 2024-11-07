@@ -20,8 +20,11 @@ public class TimeFormat {
 		}
 		
 		else
-		    { 
-			 s= "AM";
+		    {
+			if(hours==12) 
+			  s= "PM";
+			else
+			  s= "AM";
 			 if(minutes<10)
 			   System.out.println(hours + ":0" + minutes + " " + s );
 	              else
